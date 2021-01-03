@@ -7,7 +7,13 @@ function App() {
   return (
     <div className="App App-header">
       <Head title="moose" isActive={false} />
-      <Button onClick={value => console.log(value)} />
+      <Button onClick={e => {
+        e.preventDefault()
+        console.log(e)
+      }}
+      >
+        Hello FC
+      </Button>
     </div>
   );
 }
