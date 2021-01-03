@@ -2,6 +2,7 @@ import React from 'react';
 import { Head } from "./components/Head";
 import './App.css';
 import { Button } from './components/Button';
+import { Input } from './components/Input';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       >
         Hello FC
       </Button>
+      <Input />
     </div>
   );
 }
