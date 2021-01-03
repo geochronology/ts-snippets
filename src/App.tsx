@@ -3,6 +3,7 @@ import { Head } from "./components/Head";
 import './App.css';
 import { Button } from './components/Button';
 import { Input } from './components/Input';
+import { ReducerButtons } from './components/ReducerButtons';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       >
         Hello FC
       </Button>
+      <ReducerButtons />
       <Input />
     </div>
   );

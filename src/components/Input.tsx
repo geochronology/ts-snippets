@@ -6,9 +6,13 @@ export const Input = () => {
   // read-only ref
   const ref = useRef<HTMLInputElement>(null)
 
-  if (ref && ref.current) {
-    console.log("ref", ref.current.value)
-  }
+  // null check without ?
+  // if (ref && ref.current) {
+  //   console.log("ref", ref.current.value)
+  // }
+
+  // null check w ?
+  console.log("ref", ref?.current?.value)
 
   return (
     <input value={name} onChange={e => setName(e.target.value)} />
